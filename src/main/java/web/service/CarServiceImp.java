@@ -25,7 +25,7 @@ public class CarServiceImp implements CarService {
     @Override
     public List<Car> countCarList(int count) {
         List<Car> cars = new ArrayList<>();
-        if (count < 0 || count > 5) {
+        if (count >= 5) {
             return cars;
         }
         for (int i = 0; i < count; i++) {
